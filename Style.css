@@ -1,0 +1,70 @@
+body
+{
+    background-color: rgb(209, 200, 117);  
+}
+
+
+
+
+
+/* Nav Content *********************************************************************** */
+#container
+{
+    display: grid;   
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content ;
+    grid-template-rows: minmax(150px, 1fr);
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#container:before, #container:after 
+{
+    content: '';
+    width: 10px;
+}
+
+#container> img
+{
+    scroll-snap-align: center;
+    height: 500px;
+    width: 700px;
+    
+}
+
+
+
+
+/* Navegation dots ******************************************************************* */
+
+.nav
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li
+{
+    /* Rounded border */
+    border-radius: 9999px;
+    height: 12px;
+    width: 12px;
+
+    /* Active dot */
+    background-color: rgba(0, 0, 0, .3);
+
+    /* Inactive dot */
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .3);
+
+    /* OPTIONAL: Spacing between dots */
+    margin: 0 4px;
+}
