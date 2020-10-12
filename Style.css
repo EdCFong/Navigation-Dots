@@ -36,8 +36,6 @@ body
 }
 
 
-
-
 /* Navegation dots ******************************************************************* */
 
 .nav
@@ -51,7 +49,7 @@ body
     margin: 0;
     padding: 0;
 }
-.nav li
+.nav a
 {
     /* Rounded border */
     border-radius: 9999px;
