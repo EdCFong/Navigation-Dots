@@ -1,10 +1,7 @@
 body
 {
-    background-color: rgb(209, 200, 117);  
+    background-color: rgb(182, 178, 178);  
 }
-
-
-
 
 
 /* Nav Content *********************************************************************** */
@@ -16,23 +13,22 @@ body
     grid-auto-columns: max-content ;
     grid-template-rows: minmax(150px, 1fr);
 
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
+    overflow-x: hidden;
     padding-bottom: 20px;
     margin-bottom: 20px;
+
+    background-color: wheat;
 }
 #container:before, #container:after 
 {
     content: '';
-    width: 10px;
+    width: 50px;
 }
 
 #container> img
 {
-    scroll-snap-align: center;
     height: 500px;
-    width: 700px;
-    
+    width: 700px;   
 }
 
 
@@ -54,13 +50,7 @@ body
     /* Rounded border */
     border-radius: 9999px;
     height: 12px;
-    width: 12px;
-
-    /* Active dot */
-    background-color: rgba(0, 0, 0, .3);
-
-    /* Inactive dot */
-    background-color: transparent;
+    width: 12px; 
     border: 1px solid rgba(0, 0, 0, .3);
 
     /* OPTIONAL: Spacing between dots */
